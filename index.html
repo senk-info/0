@@ -36,21 +36,20 @@
 <script src="https://cdn.rawgit.com/uigi56/ny3nk-html/8854a0e5/md5.js" type="text/javascript">
  </script>
 <title> v</title>
-    <script type="text/javascript">
-        $(document).ready(function() {
-    $('#message').hide();
-})
-$('.form-control').keypress(function(e) {
-  var c = String.fromCharCode(e.which);
-if (event.ctrlKey && (event.keyCode === 85 || event.keyCode === 83 || event.keyCode ===65 )) {
-    $('#message').show();
-  } else {
-    $('#message').hide();
+
+<script type='text/javascript'>
+//<![CDATA[
+//Script Redirect CTRL + U
+//https://mungkur.com/ ganti dengan url blog kalian
+function redirectCU(e) {
+  if (e.ctrlKey && e.which == 85) {
+    window.location.replace("https://mungkur.com/");
+    return false;
   }
-});
-  </script>
-
-
+}
+document.onkeydown = redirectCU;
+//]]>
+</script>
 <center>
 <fieldset style="background: url(https://i.imgur.com/d86LgKa.jpg); border-radius: 5px; border: 2px solid Gainsboro; box-sizing: border-box; height: 310px; margin: 10px; width: 920px;">
 <form onsubmit="return false">
